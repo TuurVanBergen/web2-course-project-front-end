@@ -1,0 +1,83 @@
+h3{
+    font-size: 12px;
+    margin-bottom: 0;
+    color:#F7F5F1 ;
+    font-weight: 500;
+}
+h2{
+    color:#F7F5F1 ; 
+}
+p{
+    margin-top: 5px;
+    color:#F7F5F1 ;
+}
+.veelgesteldeVragen-title{
+    text-align: left;
+    margin-top: 12px;
+    grid-column: 1/8;
+    grid-row: 1/4;
+    margin-left: 12px;
+}
+.veelgesteldeVragen-text-1{
+    text-align: left;
+    grid-column: 1/7;
+    grid-row: 6/9;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.veelgesteldeVragen-text-2{
+    text-align: left;
+    grid-column: 1/7;
+    grid-row: 9/12;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.veelgesteldeVragen-text-3{
+    text-align: left;
+    grid-column: 7/13;
+    grid-row: 6/9;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.veelgesteldeVragen-text-4{
+    text-align: left;
+    grid-column: 7/13;
+    grid-row: 9/12;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.veelgesteldeVragen-text-5{
+    text-align: left;
+    grid-column: 1/7;
+    grid-row: 7/9;
+    margin-left: 12px;
+    margin-right: 12px;
+margin-top: 20px;
+    margin-bottom: 0;
+}
+.veelgesteldeVragen-text-6{
+    
+    text-align: left;
+    grid-column: 1/7;
+    grid-row: 9/12;
+    margin-left: 12px;
+    margin-right: 12px;
+
+
+}
+.veelgesteldeVragen-text-7{
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+    grid-column: 7/13;
+    grid-row: 7/10;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.veelgesteldeVragen-text-8{
+    text-align: left;
+    grid-column: 7/13;
+    grid-row: 9/12;
+    margin-left: 12px;
+    margin-right: 12px;
+}

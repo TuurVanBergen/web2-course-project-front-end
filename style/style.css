@@ -1,0 +1,158 @@
+p{
+    font-size: 12px;
+    text-align: justify;
+}
+h2{
+    font-size: 17px;
+    font-weight: 200;
+}
+h1{
+    margin-top: 8px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+h3{
+    font-size: 14px;
+    margin-top: 0;
+    font-weight: 200;
+}
+
+/**//**//**//**//**//**//**/
+/*navigatie*/
+.selected{
+    font-family: "area-normal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.nav {
+    width: 19.4%;
+    height: 100%;
+    float: left;
+}
+.nav-wrapper {
+    background-color: #F7F5F1;
+    padding-left: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+.contact p {
+    margin: 1px;
+}
+.contact h3 {
+    font-size: 17px;
+    margin: 3px;
+    font-weight: 600;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+nav ul li {
+    margin-bottom: 5px;
+}
+ul {    
+    list-style-type: none;
+    padding: 0;
+}
+/**//**//**//**//**//**//**/
+
+.nav h4 {
+    font-weight: 200;
+}
+/**//**//**//**//**//**//**/
+/*algemeen*/
+.nav h2{
+    font-size: 17px;
+    font-weight: 200;
+    margin-bottom: 50px;
+    color: #000;
+}
+.nav h3{
+    font-size: 17px;
+    margin: 0;
+    color: #000;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: black;
+    background-color: #E50F10;
+}
+.book-wrapper {
+    width: 80.6%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+/**//**//**//**//**//**//**/
+
+/*Structuur opbouw pagina*/
+.nav p{
+        font-size: 12px;
+        text-align: justify;
+        color: #000;
+}
+.page-left{
+    width: 49%;
+    background-color: #E50F10;
+    text-align: center;
+    border-right: solid #F7F5F1;
+    
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12, minmax(50px,auto));
+    position: relative;
+}
+.page-right{
+    width: 49%;
+    background-color: #F7F5F1;
+    border-left:solid #F7F5F1;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12, minmax(50px,auto));
+    position: relative;
+}
+
+.test{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    width: 100%;
+    height: 100%;
+}
+.test p{
+    border: 1px solid #000;
+    margin: 0;
+    opacity: 0.2;
+}
+/**//**//**//**//**//**//**/
+
+/*arrows pagina veranderen*/
+
+.arrows{
+    position: static;
+ grid-column: 11/13;
+    grid-row: 13/13;
+  margin-right: 12px;
+    text-align: center;
+}
+.arrows img{
+    width: 36px;
+}
+
+/**//**//**//**//**//**//**/

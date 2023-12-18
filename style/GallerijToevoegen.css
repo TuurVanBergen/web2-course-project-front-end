@@ -1,0 +1,53 @@
+.GallerijToevoegen-title{
+    grid-column: 1/13;
+    grid-row: 1/13;
+    text-align: left;
+    margin-left: 12px;
+    color: #F7F5F1;
+}
+.GallerijToevoegen-title h2{
+    margin-top: 12px;
+}
+.GallerijToevoegen-text{
+    margin-left: 12px;
+    text-align: left;
+    grid-column: 1/6;
+    grid-row: 12/13;
+    color: #F7F5F1;
+}
+.form-wrapper{
+    grid-column: 5/13;
+    grid-row: 1/13;
+    margin-top: 50px;
+}
+.form-section{
+    color: #E50F10;
+    border-top: 1px #E50F10 solid;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(1, minmax(25px,auto));
+    margin-right: 12px;
+}
+input{
+    border: 1px solid #E50F10;
+    border-radius: 7px;
+    padding: 5px;
+    color: #E50F10;
+    margin-top: 8px;
+
+}
+.form-title{
+    grid-column: 1/4;
+    text-align: left;
+}
+.form-input{
+    grid-column: 4/9;
+    text-align: right;
+    margin-bottom: 8px;
+}
+::placeholder {
+    color: #E50F10;
+}
+.last-line{
+    border-bottom: #E50F10 solid 1px;
+}
