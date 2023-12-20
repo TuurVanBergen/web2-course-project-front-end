@@ -144,14 +144,14 @@ body, html {
 
 /*arrows pagina veranderen*/
 
-.arrows{
-    position: static;
- grid-column: 11/13;
-    grid-row: 13/13;
-  margin-right: 12px;
-    text-align: center;
+#arrows {
+    position: fixed;
+    bottom: 10px; /* Adjust the bottom position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    padding: 10px;
+    z-index: 999; /* Optional: Use z-index to control stacking order */
 }
-.arrows img{
+#arrows img{
     width: 36px;
 }
 

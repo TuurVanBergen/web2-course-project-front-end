@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "web2-course-project-front-end-TuurVanBergen",
+			"path": "."
+		},
+		{
+			"name": "img",
+			"path": "../web2-exercises-TuurVanBergen/session9/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web2-course-project-front-end-TuurVanBergen"
+	}
+}

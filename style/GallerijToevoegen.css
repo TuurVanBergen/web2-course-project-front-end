@@ -51,3 +51,7 @@ input{
 .last-line{
     border-bottom: #E50F10 solid 1px;
 }
+
+#form p{
+    grid-column: 1/7;
+}
