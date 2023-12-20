@@ -65,6 +65,10 @@ async function getData(url, method, data) {
 document.add
 
 document.querySelector("#cok").addEventListener("click", function(){
+    
+
+
+
+
     window.location.href = "delete.html";
-console.log('hond')
 })
