@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/zrl0ajt.css">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/GallerijToevoegen.css">
-    <title>Gallerij toevoegen</title>
+    <title>Gallerij aanpassen</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-    <script src="./addGallery.js" defer></script>
+    <script src="delete.js" defer type="module"></script>
 <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -25,8 +25,8 @@
                     <li><a href="./Kunstenaar.html">07 KUNSTENAAR IN DE KIJKER</a></li>
                     <li><a href="./Meesterwerk.html">09 MEESTERWERK VAN DE MAAND</a></li>
                     <li><a href="./Gallerijen.html">15 GALLERIJEN</a></li>
-                    <li class="selected"><a href="./GallerijToevoegen.html">63 GALLERIJ TOEVOEGEN</a></li>
-                    <li><a href="./updateGallery.html">65 GALLERIJ AANPASSEN</a></li>
+                    <li><a href="./GallerijToevoegen.html">63 GALLERIJ TOEVOEGEN</a></li>
+                    <li class="selected"><a href="./updateGallery.html">65 GALLERIJ AANPASSEN</a></li>
                     <li><a href="./veelgesteldeVragen.html">67 VEELGESTELDE VRAGEN</a></li>
                 </ul>
             </nav>
@@ -42,11 +42,11 @@
     <div class="book-wrapper">
         <div class="page-left">
             <div class="GallerijToevoegen-title">
-                <h2>GALLERIJ TOEVOEGEN</h2>
+                <h2>GALLERIJ AANPASSEN</h2>
             </div>
             <div class="GallerijToevoegen-text">
-                <h3>Word onderdeel van onze kunstgemeenschap</h3>
-                <p>Ben je een trotse eigenaar van een inspirerende galerij in Brussel? Sluit je aan bij onze groeiende kunstgemeenschap door jouw galerij toe te voegen aan onze website. Verbind met kunstliefhebbers en vergroot de bekendheid van je ruimte.</p>
+                <h3>Pas je galerij aan</h3>
+                <p>Wil je wat wijzigen in de presentatie van jouw galerij op onze website? Laat je kunstruimte nog meer stralen door details aan te passen zoals de naam, toegankelijkheid, prijs, of sociale media links. Blijf verbonden met kunstliefhebbers en vergroot de bekendheid van je galerij.</p>
             </div>
         </div>
 
@@ -76,22 +76,26 @@
                 </div>
             </div>-->
             <div class="form-wrapper">
+        <h3 style="color:#E50F10">Verwijder een gallerij</h3>
             <div class="form-section">
-                <p class="form-title">Naam van de Galerij</p>
+                <p class="form-title">Naam van de gallerij:</p>
                 <form class="form-input">
-                    <input type="text" id="galleryName" name="galleryName" placeholder="Vul in">
+                    <input type="text" name="" id="deleteGallery" placeholder="Vul in">
+                    <button type="submit" id="submitDelete">Verwijder</button>
                 </form>
+                <p class="form-title" id="deleteResult"style="color: #E50F10; font-weight: bold;"></p>
             </div>
             <div class="form-section">
-                <p class="form-title">Type gallerij</p>
-                <form class="form-input">
-                    <input type="text" id="typeGallery" name="typeGallery" placeholder="Vul in">
-                </form>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
+            <h3 style="color:#E50F10">Pas een gallerij aan</h3>
             <div class="form-section">
-                <p class="form-title">Openengsuren Galerij</p>
+                <p class="form-title">Naam van de gallerij:</p>
                 <form class="form-input">
-                    <input type="text" id="openingHours" name="openingHours" placeholder="Vul in">
+                    <input type="text" id="updateGallery" name="updateGallery" placeholder="Vul in">
                 </form>
             </div>
             <div class="form-section">
@@ -108,24 +112,6 @@
                     <input type="text" id="adres" name="adres" placeholder="Vul in">
                     </form>
             </div>
-            <div class="form-section">
-                <p class="form-title">Beschrijving 1 Galerij</p>
-
-                <form class="form-input">                    
-                    <input type="text" id="description1" name="description1" placeholder="beschrijving">
-                    <input type="text" id="description1-title" name="description1-title" placeholder="Titel">
-                    </form>
-                    <p class="form-title">Titel 1</p>
-            </div>
-            <div class="form-section">
-                <p class="form-title">Beschrijving 2 Galerij</p>
-
-                <form class="form-input">                    
-                    <input type="text" id="description2" name="description2" placeholder="beschrijving">
-                    <input type="text" id="description2-title" name="description2-title" placeholder="Titel">
-                    </form>
-                    <p class="form-title">Titel 2</p>
-            </div>
             <div class="form-section last-line">
                 <p class="form-title">Sociale Media Links</p>
                 <form class="form-input">
@@ -134,14 +120,16 @@
                     <input type="text" id="Furl" name="Furl" placeholder="Facebook link">
                     </form>
             </div>
-            <button type="submit" id="paard" style="float: right; margin-right:12px ;">Toevoegen</button>
-            <p id="result" style="color: #E50F10; font-weight: bold;"></p>
+            <div>
+            <button type="submit" id="SubmitUpdateGallery" style="float: right; margin-right:12px ;">aanpassen</button>
+        </div>
+            <p id="resultUpdate" style="color: #E50F10; font-weight: bold;"></p>
             </div>
         </div>
     </div>
     <div id="arrows">
-        <a href="./Gallerijen2.html"><img src="./images/Path -2.svg" alt="" srcset=""></a>  
-        <a href="./updateGallery.html"><img src="./images/Path 1.svg" alt="" srcset=""></a>  
+        <a href="./GallerijToevoegen.html"><img src="./images/Path -2.svg" alt="" srcset=""></a>  
+        <a href="./veelgesteldeVragen.html"><img src="./images/Path 1.svg" alt="" srcset=""></a>  
        </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 "use strict";
  
 export default class Artist {
-    constructor(id, title, date, page, category, opening_hours, price, location,accesability,facebook_link,instagram_link,website_link,text_1_title,text_1,text_2_title,text_2) {
+    constructor(id, title, date, page, category, opening_hours, price, location,accesability,facebook_link,instagram_link,website_link,text_1_title,text_1,text_2_title,text_2, Artist) {
         this.id = id;
         this.title = title;
         this.date = date;
@@ -19,8 +19,9 @@ export default class Artist {
         this.text_1 = text_1;
         this.text_2_title = text_2_title;
         this.text_2 = text_2;
+        this.Artist = Artist;
     }
-
+    
     get htmlString() {
         return `<div class="gallery-table">
         <h4 class="gallery-title">${this.title}</h4>

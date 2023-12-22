@@ -1,14 +1,43 @@
-import Gallery from "./gallery.js";
-let allGalleries = []
-console.log(Gallery)
-
-getData("http://localhost:3000/Table-of-Contents", "GET").then((data) => {
-    for (let i = 0; i < data.length; i++) {
-        let Galleries = new Gallery(data[i]._id, data[i].title, data[i].date, data[i].page, data[i].category, data[i].opening_hours, data[i].price, data[i].location, data[i].accesability, data[i].facebook_link, data[i].instagram_link, data[i].website_link, data[i].text_1_title, data[i].text_1, data[i].text_2_title, data[i].text_2);
-        allGalleries.push(Galleries);
+async function deleteGallery(event) {
+    event.preventDefault();
+    const deleteGallery = {
+        title: document.getElementById('deleteGallery').value,
     }
-    console.log(allGalleries);
-    display(currentIndex);
-});
-console.log(allGalleries);
-display(currentIndex);
+
+    let result = await fetch("http://localhost:3000/deleteGallery", {
+        method: "DELETE",
+        headers: {'Content-Type': 'application/json'}, 
+        body: JSON.stringify(deleteGallery)
+      });
+
+    result = await result.json();
+    document.getElementById('deleteResult').innerHTML = result.error ?? result.message;
+}
+
+document.getElementById('submitDelete').addEventListener('click', deleteGallery);
+
+
+async function updateGallery(event) {
+    event.preventDefault();
+    const updateGallery = {
+        title: document.getElementById('updateGallery').value,
+        price:document.getElementById('price').value,
+        artist:document.getElementById('artist').value,
+        adres:document.getElementById('adres').value,
+        url:document.getElementById('url').value,
+        Iurl:document.getElementById('Iurl').value,
+        Furl:document.getElementById('Furl').value
+    }
+console.log(updateGallery)
+    let result = await fetch("http://localhost:3000/updateGallery", {
+        method: "PUT",
+        headers: {'Content-Type': 'application/json'}, 
+        body: JSON.stringify(updateGallery)
+
+      });
+
+    result = await result.json();
+    document.getElementById('resultUpdate').innerHTML = result.error ?? result.message;
+}
+
+document.getElementById('SubmitUpdateGallery').addEventListener('click', updateGallery);

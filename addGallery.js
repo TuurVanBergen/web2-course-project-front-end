@@ -17,7 +17,6 @@ console.log("ada")
         text_2: document.getElementById('description2').value,
         category: document.getElementById('typeGallery').value
     }
-console.log(AddGalleryData)
     let result = await fetch("http://localhost:3000/addGallery", {
         method: "POST",
         headers: {'Content-Type': 'application/json'}, 

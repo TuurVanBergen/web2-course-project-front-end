@@ -24,7 +24,7 @@ document.querySelector("#back").addEventListener("click", function(){
 
 getData("http://localhost:3000/Table-of-Contents", "GET").then((data) => {
     for (let i = 0; i < data.length; i++) {
-        let Galleries = new Gallery(data[i]._id, data[i].title, data[i].date, data[i].page, data[i].category, data[i].opening_hours, data[i].price, data[i].location, data[i].accesability, data[i].facebook_link, data[i].instagram_link, data[i].website_link, data[i].text_1_title, data[i].text_1, data[i].text_2_title, data[i].text_2);
+        let Galleries = new Gallery(data[i]._id, data[i].title, data[i].date, data[i].page, data[i].category, data[i].opening_hours, data[i].price, data[i].location, data[i].accesability, data[i].facebook_link, data[i].instagram_link, data[i].website_link, data[i].text_1_title, data[i].text_1, data[i].text_2_title, data[i].text_2, data[i].artist);
         allGalleries.push(Galleries);
     }
     console.log(allGalleries);
@@ -41,11 +41,34 @@ function display(index) {
     // Insert new content (arrows + gallery) inside .book-wrapper
     const galleryString = allGalleries[index].galleryString;
     bookWrapper.insertAdjacentHTML("afterbegin", galleryString);
+    checkFordelete(allGalleries[index].id)
+}
+function checkFordelete(id){
 
-    // Set href attributes dynamically based on currentIndex
-    const backButton = document.querySelector("#back");
-    const nextButton = document.querySelector("#next");
-
+    document.querySelector("#cok").addEventListener("click", async function () {
+        console.log(id)
+        try {
+            const galleryIdToDelete = is; // Replace with the actual gallery ID you want to delete
+            const response = await fetch(`/deleteGallery`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ _id: galleryIdToDelete }),
+            });
+    
+            if (response.ok) {
+                const result = await response.json();
+                console.log(result.message);
+                // Optionally, you can redirect or perform other actions after successful deletion
+            } else {
+                const error = await response.json();
+                console.error(error.message);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    });
 }
 
 async function getData(url, method, data) {
@@ -62,13 +85,5 @@ async function getData(url, method, data) {
     return await resp.json();
 }
 
-document.add
+//window.location.href = "delete.html";
 
-document.querySelector("#cok").addEventListener("click", function(){
-    
-
-
-
-
-    window.location.href = "delete.html";
-})

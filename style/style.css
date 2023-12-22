@@ -156,3 +156,19 @@ body, html {
 }
 
 /**//**//**//**//**//**//**/
+button{
+    border: #E50F10 1px solid;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 8px;
+    background-color: #E50F10;
+    color: #F7F5F1;
+}
+button:hover{
+    border: #E50F10 1px solid;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 8px;
+    background-color:#F7F5F1 ;
+    color: #E50F10;
+}
