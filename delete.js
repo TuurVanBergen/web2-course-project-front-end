@@ -1,6 +1,7 @@
 async function deleteGallery(event) {
     event.preventDefault();
-
+    //I used this documentation to make the delete route
+    //https://www.geeksforgeeks.org/express-js-app-delete-function/
     //Read the data from the input fields, and put it in an object.
     const deleteGallery = {
         title: document.getElementById('deleteGallery').value,
@@ -21,7 +22,8 @@ async function deleteGallery(event) {
 //if the button with id "submitDelete" is clicked, then the function deleteGallery is called
 document.getElementById('submitDelete').addEventListener('click', deleteGallery);
 
-
+//de put route (update) documentatie
+//https://expressjs.com/en/guide/routing.html
 async function updateGallery(event) {
     event.preventDefault();
 
