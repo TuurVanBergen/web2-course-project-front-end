@@ -24,6 +24,7 @@ document.getElementById('submitDelete').addEventListener('click', deleteGallery)
 
 //de put route (update) documentatie
 //https://expressjs.com/en/guide/routing.html
+//https://stackoverflow.com/questions/33295856/how-to-do-update-operation-in-express-js
 async function updateGallery(event) {
     event.preventDefault();
 
