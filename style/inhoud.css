@@ -26,11 +26,9 @@ p{
 h2{
     color: #F7F5F1;
 }
-
 .titel{
     text-align: left;
 }
-
 .page-right{
     background-color: #E50F10;
 }
@@ -42,7 +40,6 @@ h2{
     flex-direction: column;
     color: #F7F5F1;
 }
-
 .tag{
     margin: 0;
     font-size: 10px;
@@ -71,7 +68,6 @@ h2{
         justify-content: space-between;
         margin: 0;
 }
-
 .m-reverse {
     display: flex;
     flex-direction: row-reverse;
@@ -81,7 +77,6 @@ h2{
     margin-top: 7px;
     margin-bottom: 7px;
 }
-
 .galleries-table {
     grid-column: 6/14;
     grid-row: 1/9;

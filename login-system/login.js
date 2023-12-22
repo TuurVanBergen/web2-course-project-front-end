@@ -16,7 +16,6 @@ async function formSubmitted(event) {
 
     sessionStorage.setItem('uuid', result.uuid);
     console.log(result);
-    console.log("paardenstaarrt")
 }
 
 document.getElementById('loginform').addEventListener('submit', formSubmitted);

@@ -22,6 +22,7 @@ export default class Artist {
         this.Artist = Artist;
     }
     
+    //This getter returns a string that shows the content of the gallery page
     get htmlString() {
         return `<div class="gallery-table">
         <h4 class="gallery-title">${this.title}</h4>
@@ -32,6 +33,8 @@ export default class Artist {
         <p class="gallery-page">${this.page}</p>
     </div>`;
     }
+
+    //This getter returns a string that shows the content of every individual gallery page.
     get galleryString(){
         return ` <div class="page-left" style="background-color: #F7F5F1; border-right: 1px solid #E50F10;border-left: 1px solid #E50F10; ">
         <!--  <div class="test">

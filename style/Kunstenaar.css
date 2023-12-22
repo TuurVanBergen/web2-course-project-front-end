@@ -8,13 +8,11 @@ body{
 .page-right{
     border-Left: #E50F10 solid 1px;
 }
-
 .Artist-title{
     grid-column: 1/10;
     grid-row: 1/2;
     margin-left: 12px;
 }
-
 .Artist-img img{
     width: 100%;
 }

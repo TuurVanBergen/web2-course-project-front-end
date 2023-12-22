@@ -13,7 +13,8 @@ export default class Artist {
         this.img6 = img6;
         this.img7 = img7;
     }
- 
+
+     //This getter returns a string that shows the content of the Artwork page
     get htmlString() {
         return ` <div class="page-left">
         <!-- <div class="test">
@@ -57,6 +58,7 @@ export default class Artist {
         <img src="${this.img1}" alt="">
     </div>`;
     }
+         //This getter returns a string that shows the content of the Artwork2 page
     get Masterwork2HtmlString() {
         return `<div class="page-left">
         <!--  <div class="test">
@@ -101,6 +103,8 @@ export default class Artist {
    </div>
 </div>`;
     }
+
+             //This getter returns a string that shows the content of the Artwork3 page
     get Masterwork3HtmlString() {
         return ` <div class="page-left">
         <!--    <div class="test">

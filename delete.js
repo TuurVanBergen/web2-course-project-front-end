@@ -1,9 +1,12 @@
 async function deleteGallery(event) {
     event.preventDefault();
+
+    //Read the data from the input fields, and put it in an object.
     const deleteGallery = {
         title: document.getElementById('deleteGallery').value,
     }
 
+    //Sending a DELETE request to "http://localhost:3000/deleteGallery"
     let result = await fetch("http://localhost:3000/deleteGallery", {
         method: "DELETE",
         headers: {'Content-Type': 'application/json'}, 
@@ -11,14 +14,18 @@ async function deleteGallery(event) {
       });
 
     result = await result.json();
+     //use result.error, or user result.message
     document.getElementById('deleteResult').innerHTML = result.error ?? result.message;
 }
 
+//if the button with id "submitDelete" is clicked, then the function deleteGallery is called
 document.getElementById('submitDelete').addEventListener('click', deleteGallery);
 
 
 async function updateGallery(event) {
     event.preventDefault();
+
+    //Read the data from the input fields, and put it in an object.
     const updateGallery = {
         title: document.getElementById('updateGallery').value,
         price:document.getElementById('price').value,
@@ -28,7 +35,8 @@ async function updateGallery(event) {
         Iurl:document.getElementById('Iurl').value,
         Furl:document.getElementById('Furl').value
     }
-console.log(updateGallery)
+
+    //Sending a put request to "http://localhost:3000/updateGallery"
     let result = await fetch("http://localhost:3000/updateGallery", {
         method: "PUT",
         headers: {'Content-Type': 'application/json'}, 
@@ -37,7 +45,9 @@ console.log(updateGallery)
       });
 
     result = await result.json();
+     //use result.error, or user result.message
     document.getElementById('resultUpdate').innerHTML = result.error ?? result.message;
 }
 
+//if the button with id "SubmitUpdateGallery" is clicked, then the function updateGallery is called
 document.getElementById('SubmitUpdateGallery').addEventListener('click', updateGallery);

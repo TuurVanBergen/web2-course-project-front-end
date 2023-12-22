@@ -13,6 +13,7 @@ export default class Artist {
         this.img = img;
     }
  
+    //This getter returns a string that shows the content of the Artist page
     get htmlString() {
         return `
         <div class="page-left">
