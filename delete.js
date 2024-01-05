@@ -8,7 +8,7 @@ async function deleteGallery(event) {
     }
 
     //Sending a DELETE request to "http://localhost:3000/deleteGallery"
-    let result = await fetch("http://localhost:3000/deleteGallery", {
+    let result = await fetch("https://brussel-in-beeld.onrender.com/deleteGallery", {
         method: "DELETE",
         headers: {'Content-Type': 'application/json'}, 
         body: JSON.stringify(deleteGallery)
