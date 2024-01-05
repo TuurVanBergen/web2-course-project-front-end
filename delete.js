@@ -40,7 +40,7 @@ async function updateGallery(event) {
     }
 
     //Sending a put request to "http://localhost:3000/updateGallery"
-    let result = await fetch("http://localhost:3000/updateGallery", {
+    let result = await fetch("https://brussel-in-beeld.onrender.com/updateGallery", {
         method: "PUT",
         headers: {'Content-Type': 'application/json'}, 
         body: JSON.stringify(updateGallery)
