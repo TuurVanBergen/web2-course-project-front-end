@@ -2,7 +2,7 @@ import Artist from "./artist.js";
 let allArtists = [];
  
 //get the data from "http://localhost:3000/artist" and makes Artist objects with it.
-getData("http://localhost:3000/artist", "GET", ).then((data) => {
+getData("https://brussel-in-beeld.onrender.com/artist", "GET", ).then((data) => {
     console.log(data.length)
     for (let i = 0; i < data.length; i++) {
         let Artists = new Artist(data[i]._id, data[i].name, data[i].img, data[i].about_text, data[i].introduction_text, data[i].article_text_1, data[i].article_text_2, data[i].article_text_3, data[i].article_text_4);
