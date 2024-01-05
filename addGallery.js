@@ -20,7 +20,7 @@ async function formSubmitted(event) {
     }
  
     //Sending a post request to "http://localhost:3000/addGallery"
-    let result = await fetch("http://localhost:3000/addGallery", {
+    let result = await fetch("https://brussel-in-beeld.onrender.com/addGallery", {
         method: "POST",
         headers: {'Content-Type': 'application/json'}, 
         body: JSON.stringify(AddGalleryData)
