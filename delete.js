@@ -51,6 +51,5 @@ async function updateGallery(event) {
      //use result.error, or user result.message
     document.getElementById('resultUpdate').innerHTML = result.error ?? result.message;
 }
-
 //if the button with id "SubmitUpdateGallery" is clicked, then the function updateGallery is called
 document.getElementById('SubmitUpdateGallery').addEventListener('click', updateGallery);
